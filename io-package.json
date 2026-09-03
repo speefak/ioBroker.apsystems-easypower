@@ -1,0 +1,192 @@
+{
+  "common": {
+    "name": "apsystems-easypower",
+    "version": "0.2.3",
+    "news": {
+      "0.2.3": {
+        "en": "Maintenance release: completed repository CI/CD and developer tooling setup; updated metadata and documentation.",
+        "de": "Wartungsrelease: Repository-CI/CD und Entwicklerwerkzeuge vervollständigt; Metadaten und Dokumentation aktualisiert.",
+        "ru": "Технический выпуск: завершены настройки CI/CD и инструментов разработки; обновлены метаданные и документация.",
+        "pt": "Versão de manutenção: configuração de CI/CD e ferramentas de desenvolvimento concluída; metadados e documentação atualizados.",
+        "nl": "Onderhoudsrelease: CI/CD en ontwikkeltools voltooid; metadata en documentatie bijgewerkt.",
+        "fr": "Version de maintenance : configuration CI/CD et outils de développement terminés ; métadonnées et documentation mises à jour.",
+        "it": "Versione di manutenzione: completata la configurazione CI/CD e degli strumenti di sviluppo; metadati e documentazione aggiornati.",
+        "es": "Versión de mantenimiento: configuración de CI/CD y herramientas de desarrollo completada; metadatos y documentación actualizados.",
+        "pl": "Wydanie konserwacyjne: ukończono konfigurację CI/CD i narzędzi programistycznych; zaktualizowano metadane i dokumentację.",
+        "uk": "Технічний випуск: завершено налаштування CI/CD та інструментів розробки; оновлено метадані й документацію.",
+        "zh-cn": "维护版本：完成 CI/CD 和开发工具配置；更新元数据和文档。"
+      },
+      "0.2.2": {
+        "en": "Fixed 'has to be type number but received type string' log errors by coercing API values to the declared state type.",
+        "de": "Log-Fehler 'has to be type number but received type string' behoben, indem API-Werte in den deklarierten State-Typ konvertiert werden.",
+        "ru": "Исправлены ошибки типов в логах путем приведения значений API к объявленному типу состояния.",
+        "pt": "Corrigidos erros de tipo nos logs convertendo os valores da API para o tipo de estado declarado.",
+        "nl": "Typefouten in logs opgelost door API-waarden om te zetten naar het gedeclareerde statustype.",
+        "fr": "Correction des erreurs de type dans les journaux en convertissant les valeurs API vers le type d’état déclaré.",
+        "it": "Corretti gli errori di tipo nei log convertendo i valori API al tipo di stato dichiarato.",
+        "es": "Corregidos los errores de tipo en los registros convirtiendo los valores de la API al tipo de estado declarado.",
+        "pl": "Naprawiono błędy typów w logach przez konwersję wartości API do zadeklarowanego typu stanu.",
+        "uk": "Виправлено помилки типів у журналах шляхом приведення значень API до оголошеного типу стану.",
+        "zh-cn": "通过将 API 值转换为声明的状态类型，修复日志中的类型错误。"
+      },
+      "0.2.1": {
+        "en": "Poll interval is now configured in seconds (min. 10s) instead of minutes (min. 1min). Existing instances are migrated automatically on first start.",
+        "de": "Poll-Intervall wird jetzt in Sekunden (min. 10s) statt Minuten (min. 1min) konfiguriert. Bestehende Instanzen werden beim ersten Start migriert.",
+        "ru": "Интервал опроса теперь задается в секундах (минимум 10 с), а не в минутах. Существующие экземпляры автоматически мигрируются при первом запуске.",
+        "pt": "O intervalo de consulta agora é configurado em segundos (mín. 10 s) em vez de minutos. As instâncias existentes são migradas automaticamente na primeira inicialização.",
+        "nl": "Het polling-interval wordt nu ingesteld in seconden (min. 10 s) in plaats van minuten. Bestaande instanties worden automatisch gemigreerd bij de eerste start.",
+        "fr": "L’intervalle d’interrogation est maintenant configuré en secondes (10 s minimum) au lieu de minutes. Les instances existantes sont migrées automatiquement au premier démarrage.",
+        "it": "L’intervallo di polling è ora configurato in secondi (min. 10 s) invece che in minuti. Le istanze esistenti vengono migrate automaticamente al primo avvio.",
+        "es": "El intervalo de consulta ahora se configura en segundos (mín. 10 s) en lugar de minutos. Las instancias existentes se migran automáticamente al primer inicio.",
+        "pl": "Interwał odpytywania jest teraz konfigurowany w sekundach (min. 10 s) zamiast w minutach. Istniejące instancje są migrowane automatycznie przy pierwszym uruchomieniu.",
+        "uk": "Інтервал опитування тепер задається в секундах (мін. 10 с), а не в хвилинах. Наявні екземпляри автоматично мігрують під час першого запуску.",
+        "zh-cn": "轮询间隔现在以秒配置（最少 10 秒），不再以分钟配置。现有实例会在首次启动时自动迁移。"
+      },
+      "0.2.0": {
+        "en": "Normalized object/state schema and current adapter metadata; improved polling lifecycle and state definitions.",
+        "de": "Objekt-/State-Schema und aktuelle Adapter-Metadaten vereinheitlicht; Polling-Lebenszyklus und State-Definitionen verbessert.",
+        "ru": "Обновлена схема объектов и состояний и метаданные адаптера; улучшены жизненный цикл опроса и определения состояний.",
+        "pt": "Esquema de objetos e estados e metadados do adaptador atualizados; ciclo de consulta e definições de estados melhorados.",
+        "nl": "Object-/stateschema en adaptermetadata bijgewerkt; polling-levenscyclus en state-definities verbeterd.",
+        "fr": "Schéma des objets et états et métadonnées de l’adaptateur mis à jour ; cycle d’interrogation et définitions de états améliorés.",
+        "it": "Schema di oggetti e stati e metadati dell’adattatore aggiornati; migliorati il ciclo di polling e le definizioni degli stati.",
+        "es": "Esquema de objetos y estados y metadatos del adaptador actualizados; mejorados el ciclo de consulta y las definiciones de estados.",
+        "pl": "Zaktualizowano schemat obiektów i stanów oraz metadane adaptera; ulepszono cykl odpytywania i definicje stanów.",
+        "uk": "Оновлено схему об’єктів і станів та метадані адаптера; покращено цикл опитування і визначення станів.",
+        "zh-cn": "更新了对象和状态架构以及适配器元数据；改进了轮询生命周期和状态定义。"
+      },
+      "0.1.1": {
+        "en": "Added device/channel objects with editable common.name.",
+        "de": "Device-/Channel-Objekte mit editierbarem common.name ergänzt.",
+        "ru": "Добавлены объекты устройств и каналов с редактируемым common.name.",
+        "pt": "Foram adicionados objetos de dispositivo/canal com common.name editável.",
+        "nl": "Apparaat- en kanaalobjecten met bewerkbare common.name toegevoegd.",
+        "fr": "Ajout d’objets appareil/canal avec common.name modifiable.",
+        "it": "Aggiunti oggetti dispositivo/canale con common.name modificabile.",
+        "es": "Se añadieron objetos de dispositivo/canal con common.name editable.",
+        "pl": "Dodano obiekty urządzeń/kanałów z możliwością edycji common.name.",
+        "uk": "Додано об’єкти пристрою/каналу з можливістю редагування common.name.",
+        "zh-cn": "新增设备/通道对象，并支持编辑 common.name。"
+      },
+      "0.1.0": {
+        "en": "Initial release.",
+        "de": "Erstveröffentlichung.",
+        "ru": "Первоначальный выпуск.",
+        "pt": "Versão inicial.",
+        "nl": "Eerste release.",
+        "fr": "Version initiale.",
+        "it": "Versione iniziale.",
+        "es": "Versión inicial.",
+        "pl": "Wydanie początkowe.",
+        "uk": "Початковий випуск.",
+        "zh-cn": "首次发布。"
+      }
+    },
+    "titleLang": {
+      "en": "APsystems EasyPower",
+      "de": "APsystems EasyPower",
+      "ru": "APsystems EasyPower",
+      "pt": "APsystems EasyPower",
+      "nl": "APsystems EasyPower",
+      "fr": "APsystems EasyPower",
+      "it": "APsystems EasyPower",
+      "es": "APsystems EasyPower",
+      "pl": "APsystems EasyPower",
+      "uk": "APsystems EasyPower",
+      "zh-cn": "APsystems EasyPower"
+    },
+    "desc": {
+      "en": "Reads live power and energy data for APsystems EZ1 / EZ1-M micro-inverters from the EasyPower cloud.",
+      "de": "Liest Live-Leistungs- und Energiedaten von APsystems EZ1 / EZ1-M Wechselrichtern aus der EasyPower Cloud.",
+      "ru": "Получает текущие данные мощности и энергии микроинверторов APsystems EZ1 / EZ1-M из облака EasyPower.",
+      "pt": "Lê dados atuais de potência e energia dos microinversores APsystems EZ1 / EZ1-M da nuvem EasyPower.",
+      "nl": "Leest actuele vermogens- en energiegegevens van APsystems EZ1 / EZ1-M micro-omvormers uit de EasyPower-cloud.",
+      "fr": "Lit les données de puissance et d’énergie des micro-onduleurs APsystems EZ1 / EZ1-M depuis le cloud EasyPower.",
+      "it": "Legge i dati di potenza ed energia dei microinverter APsystems EZ1 / EZ1-M dal cloud EasyPower.",
+      "es": "Lee los datos de potencia y energía de los microinversores APsystems EZ1 / EZ1-M desde la nube EasyPower.",
+      "pl": "Odczytuje dane mocy i energii mikroinwerterów APsystems EZ1 / EZ1-M z chmury EasyPower.",
+      "uk": "Зчитує дані потужності та енергії мікроінверторів APsystems EZ1 / EZ1-M з хмари EasyPower.",
+      "zh-cn": "从 EasyPower 云读取 APsystems EZ1 / EZ1-M 微型逆变器的实时功率和能量数据。"
+    },
+    "authors": [
+      "Speefak"
+    ],
+    "keywords": [
+      "apsystems",
+      "ez1",
+      "ez1-m",
+      "easypower",
+      "solar",
+      "inverter",
+      "balkonkraftwerk",
+      "pv"
+    ],
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "apsystems-easypower.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/Speefak/ioBroker.apsystems-easypower/main/admin/apsystems-easypower.png",
+    "type": "energy",
+    "compact": true,
+    "connectionType": "cloud",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "loglevel": "info",
+    "mode": "daemon",
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.8.23"
+      }
+    ],
+    "readme": "https://github.com/Speefak/ioBroker.apsystems-easypower/blob/main/README.md",
+    "tier": 3,
+    "messagebox": false
+  },
+  "native": {
+    "username": "",
+    "password": "",
+    "pollInterval": 300,
+    "pollIntervalUnit": "seconds",
+    "rejectUnauthorized": false
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Connected to EasyPower cloud",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ],
+  "protectedNative": [
+    "password"
+  ],
+  "encryptedNative": [
+    "password"
+  ]
+}

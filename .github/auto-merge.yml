@@ -1,0 +1,5 @@
+# Dependabot PRs are auto-merged when they satisfy these rules.
+# Keep runtime type definitions on the configured Node.js major version.
+patch: true
+minor:
+  - devDependencies

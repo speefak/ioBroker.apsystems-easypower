@@ -1,0 +1,30 @@
+{
+  "type": "panel",
+  "items": {
+    "_infoHeader": {
+      "type": "staticText",
+      "text": {
+        "en": "Credentials for your APsystems EasyPower account (the same login used by the mobile app).",
+        "de": "Zugangsdaten für deinen APsystems-EasyPower-Account (gleicher Login wie in der App)."
+      },
+      "sm": 12
+    },
+    "username": {"type": "text", "label": {"en": "EasyPower username / email", "de": "EasyPower Benutzername / E-Mail"}, "sm": 12, "md": 6},
+    "password": {"type": "password", "label": {"en": "EasyPower password", "de": "EasyPower Passwort"}, "sm": 12, "md": 6},
+    "pollInterval": {
+      "type": "number",
+      "label": {"en": "Poll interval (seconds)", "de": "Poll-Intervall (Sekunden)"},
+      "min": 10, "max": 86400, "default": 300,
+      "help": {"en": "Poll interval in seconds. Minimum 10 seconds; maximum 86400 seconds (24 hours).", "de": "Abfrageintervall in Sekunden. Minimum 10 Sekunden; Maximum 86400 Sekunden (24 Stunden)."},
+      "sm": 12, "md": 6
+    },
+    "rejectUnauthorized": {
+      "type": "checkbox",
+      "label": {"en": "Strict TLS certificate validation", "de": "Strikte TLS-Zertifikatsprüfung"},
+      "help": {"en": "The EasyPower cloud may present non-standard certificates; enable only when strict validation works in your environment.", "de": "Die EasyPower Cloud kann nicht-standardkonforme Zertifikate liefern; nur aktivieren, wenn die strikte Prüfung in deiner Umgebung funktioniert."},
+      "default": false,
+      "sm": 12, "md": 6
+    }
+  },
+  "i18n": true
+}
